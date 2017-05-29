@@ -26,14 +26,14 @@ module.exports = [
         b: executing browser’s JavaScript expressions
         c: the preview of node.js application
         d: None of the above`,
-        answer: 'a' //??
+        answer: 'a'
     }, {
         question: `5. What is the default scope in Node.js application?
         a: Global
         b: Local
         c: Global Function
         d: Local to object`,
-        answer: 'b' //??
+        answer: 'b'
     }, {
         question: `6. Node.js application runs on __________
         a: Multiple threads
