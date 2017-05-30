@@ -16,7 +16,7 @@ class Server extends EventEmitter {
             if(number < QUESTIONS.length) {
                 this.emit('question', QUESTIONS[number].question);
             } else {
-                this.emit('end', `Result - ${correct}/${QUESTIONS.length}`)
+                this.emit('end', `Result - ${correct}/${QUESTIONS.length}.\nCorrect answers: ${QUESTIONS.map((question, index) => ' ' + (index + 1) + ': ' + question.answer)}`)
             }
         });
     }

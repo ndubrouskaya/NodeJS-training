@@ -15,7 +15,7 @@ function startTimer() {
     let promise = new Promise((resolve) => {
         let i = 1;
         timerId = setInterval(() => {
-            i == 10 ? resolve() : i++;
+            i === 30 ? resolve() : i++;
         }, 1000);
     });
     promise.then(() => {
