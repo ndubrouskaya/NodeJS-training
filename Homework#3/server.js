@@ -3,7 +3,7 @@ const os = require('os');
 const url = require('url');
 
 const server = require('http').createServer();
-
+const port = 8000;
 
 server.on('request', (request, response) => {
     if(request.method === 'GET') {
@@ -64,9 +64,9 @@ server.on('request', (request, response) => {
     }
 });
 
-server.listen(8000);
+server.listen(port);
 
-console.log("Server running at http://localhost:8000\nCTRL + C to shutdown");
+console.log(`Server running at http://localhost:${port}\nCTRL + C to shutdown`);
 
 function findWord(lines, query, resolve) {
     const regex = new RegExp('\\s' + query.str + '\\s');
